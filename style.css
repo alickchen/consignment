@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #FAFAFA;
+}
+.grid-item {
+  padding: 10px;
+}
+.grid-item .box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #FFF;
+}
+.grid-item .box .imgbox {
+  text-align: center;
+}
+.grid-item .box .imgbox img {
+  max-width: 100%;
+  display: inline-block;
+}
+.grid-item .box .dsc {
+  padding: 10px;
+  color: #666;
+}
+.grid-item .box .dsc .title {
+  font-size: 16px;
+}
+.grid-item .box .dsc del {
+  color: #999;
+}
+.product-detail .imgshow {
+  width: 100%;
+}
+.product-detail .operation {
+  width: 100%;
+  overflow: scroll;
+  white-space: nowrap;
+}
+.product-detail .operation a {
+  display: inline-block;
+  width: 100px;
+}
+.product-detail .operation a img {
+  width: 100%;
+}
