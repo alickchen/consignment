@@ -73,18 +73,18 @@ body {
 .product-detail .product-img table .img-show td .thumbnail {
   margin-bottom: 0;
 }
-.product-detail .operation {
+.product-detail .product-img .operation {
   margin: 20px 0 100px;
   width: 100%;
   position: relative;
 }
-.product-detail .operation .imglink {
+.product-detail .product-img .operation .imglink {
   position: relative;
   height: 130px;
   margin: 0 30px;
   overflow: hidden;
 }
-.product-detail .operation .imglink .wrap {
+.product-detail .product-img .operation .imglink .wrap {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,22 +93,22 @@ body {
   -webkit-transition: all 0.5s;
   /* Safari 和 Chrome */
 }
-.product-detail .operation .imglink .wrap a {
+.product-detail .product-img .operation .imglink .wrap a {
   display: inline-block;
   width: 100px;
   height: 130px;
   margin-left: -3.5px;
   padding-left: 5px;
 }
-.product-detail .operation .imglink .wrap a.active img {
+.product-detail .product-img .operation .imglink .wrap a.active img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.product-detail .operation .imglink .wrap a img {
+.product-detail .product-img .operation .imglink .wrap a img {
   width: 100%;
   margin-bottom: 0;
 }
-.product-detail .operation .forward,
-.product-detail .operation .backward {
+.product-detail .product-img .operation .forward,
+.product-detail .product-img .operation .backward {
   width: 30px;
   height: 110px;
   position: absolute;
@@ -119,9 +119,78 @@ body {
   color: #aaa;
   cursor: pointer;
 }
-.product-detail .operation .forward {
+.product-detail .product-img .operation .forward {
   left: 0;
 }
-.product-detail .operation .backward {
+.product-detail .product-img .operation .backward {
   right: 0;
+}
+.product-detail .product-desc {
+  height: 600px;
+  display: table;
+}
+.product-detail .product-desc .desc-box {
+  display: table-cell;
+  vertical-align: middle;
+}
+.product-detail .product-desc .desc-box .brand {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.product-detail .product-desc .desc-box .brand .en {
+  font-style: italic;
+}
+.product-detail .product-desc .desc-box .brand .ch {
+  margin-left: 5px;
+  color: #666;
+}
+.product-detail .product-desc .desc-box .title {
+  font-size: 18px;
+  color: #666;
+  line-height: 30px;
+}
+.product-detail .product-desc .desc-box .resource,
+.product-detail .product-desc .desc-box .reslink {
+  font-size: 16px;
+  color: #666;
+  line-height: 25px;
+}
+.product-detail .product-desc .desc-box .resource a,
+.product-detail .product-desc .desc-box .reslink a {
+  font-style: italic;
+}
+.product-detail .product-desc .desc-box .desc {
+  margin: 5px auto 8px;
+}
+.product-detail .product-desc .desc-box .desc span {
+  display: inline-block;
+  padding: 0 12px;
+  margin-right: 5px;
+  white-space: nowrap;
+  border: 1px solid #ddd;
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+.product-detail .product-desc .desc-box .price {
+  line-height: 35px;
+}
+.product-detail .product-desc .desc-box .price .newprice {
+  font-size: 20px;
+  color: #666;
+}
+.product-detail .product-desc .desc-box .price .newprice span {
+  color: #000;
+  font-size: 25px;
+}
+.product-detail .product-desc .desc-box .price .oldprice {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #AAA;
+}
+.product-detail .product-desc .desc-box .owner {
+  font-size: 16px;
+  color: #333;
+  line-height: 35px;
 }
