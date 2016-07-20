@@ -7,51 +7,135 @@ body {
   background: #FAFAFA;
 }
 
+//body * {
+//  font-family: "Helvetica Neue", Helvetica, Arial, Lantinghei, "Hiragino Sans GB", STHeiTi, "Microsoft YaHei", 微软雅黑, sans-serif;
+//  -webkit-font-smoothing: antialiased;
+//  -webkit-tap-highlight-color: transparent;
+//}
+
 .grid-item {
   padding: 10px;
   .box{
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     background: #FFF;
-    .imgbox {
+    .image {
+      width: 100%;
       text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, .05);
       img{
         max-width: 100%;
         display: inline-block;
       }
     }
-    .dsc {
+    .detail {
       padding: 10px;
-      color: #666;
-      .title{
+      color: #333;
+      line-height: 1.75em;
+      .designer {
         font-size: 16px;
+        font-weight: bold;
       }
-      del {
+      .title, .resource, .owner {
+        font-size: 12px;
         color: #999;
       }
-      .newprice{
-
+      .desc {
+        margin: 5px auto 8px;
+        span {
+          display: inline-block;
+          padding: 0 8px;
+          margin-right: 5px;
+          white-space: nowrap;
+          border: 1px solid #E5E5E5;
+          color: #666;
+          font-size: 12px;
+        }
+      }
+      .price {
+        font-size: 18px;
+        del {
+          margin-left: 10px;
+          font-size: 14px;
+          color: #AAA;
+        }
       }
     }
-
-
   }
 }
 .product-detail {
-  .imgshow{
-    width: 100%;
+  .product-img{
+    table {
+     width: 100%;
+      .img-show {
+        td{
+          height: 620px;
+          padding-bottom: 20px;
+          text-align: center;
+          vertical-align: middle;
+          img {
+            display: inline-block;
+            max-width: 100%;
+            max-height: 100%;
+          }
+          .thumbnail {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
+
   .operation {
+    margin: 20px 0 100px;
     width: 100%;
-    overflow: scroll;
-    white-space: nowrap;
-      a{
-        display: inline-block;
-        width: 100px;
-        img {
-          width: 100%;
+    position: relative;
+    .imglink {
+      position: relative;
+      height: 130px;
+      margin: 0 30px;
+      overflow: hidden;
+      .wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        transition: all 0.5s;
+          -webkit-transition: all 0.5s;	/* Safari 和 Chrome */
+        a{
+          display: inline-block;
+          width: 100px;
+          height: 130px;
+          margin-left: -3.5px;
+          padding-left: 5px;
+          &.active img{
+           box-shadow: 0 0 10px rgba(0,0,0,0.3);
+          }
+          img {
+            width: 100%;
+            margin-bottom: 0;
+          }
         }
       }
 
+    }
+    .forward ,.backward {
+         width: 30px;
+         height: 110px;
+         position: absolute;
+         top: 0;
+         z-index: 5;
+         font-size: 30px;
+         line-height: 110px;
+         color: #aaa;
+         cursor: pointer;
+
+    }
+    .forward {
+         left: 0;
+    }
+    .backward {
+         right: 0;
+    }
   }
 
 }

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>寄卖区</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -40,40 +41,71 @@
     </div>
 </nav>
 <div  class="container product-detail" >
-    <div class="col-md-7">
-        <div class="img-show">
-         <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="..." class="img-thumbnail img-show">
-        </div>
-        <div class="operation">
-            <a href="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fecx.images-amazon.com%2Fimages%2FI%2F51HE%252BwaC2cL.jpg&width=625&height=750&is_fill=1&is_trim=1" class="thumbnail">
-                <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
-            <a href="http://www.rotita.com/images/201605/goods_img/145325_P_1463369740926.jpg" class="thumbnail">
-                 <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
-            <a href="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fs7d4.scene7.com%2Fis%2Fimage%2FBrooksBrothers%2FMG01946_LIGHT-BLUE%3F%24bbenlarged%24&width=625&height=750&is_fill=1&is_trim=1" class="thumbnail">
-                 <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
-            <a href="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" class="thumbnail">
-                  <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
-            <a href="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" class="thumbnail">
-                  <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
-            <a href="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" class="thumbnail">
-                   <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
-            <a href="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" class="thumbnail">
-                 <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
-            <a href="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" class="thumbnail">
-                  <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fcache.theoutnet.com%2Fimages%2Fproducts%2F782525%2F782525_in_xl.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="...">
-            </a>
+    <div class="col-md-7 product-img">
+        <table>
+            <tr class="img-show">
+                <td>
+                    <img src="http://img1.mydrivers.com/img/20121009/621aeecd83eb43d5b738dff93b4a0002.jpg" alt="..." class="thumbnail img-responsive center-block">
+                </td>
+            </tr>
+            <tr>
+                <td class="operation">
+                    <div class="forward "><span class="glyphicon glyphicon-menu-left"></span></div>
+                    <div class="imglink">
+                        <div class="wrap">
+                            <a href="http://img1.mydrivers.com/img/20121009/621aeecd83eb43d5b738dff93b4a0002.jpg" class="active">
+                                <img src="http://img1.mydrivers.com/img/20121009/621aeecd83eb43d5b738dff93b4a0002.jpg" alt="..." class="thumbnail">
+                            </a>
+                            <a href="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fecx.images-amazon.com%2Fimages%2FI%2F51HE%252BwaC2cL.jpg&width=625&height=750&is_fill=1&is_trim=1" >
+                                <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fecx.images-amazon.com%2Fimages%2FI%2F51HE%252BwaC2cL.jpg&width=625&height=750&is_fill=1&is_trim=1" alt="..." class="thumbnail">
+                            </a>
+                            <a href="http://a.vpimg2.com/upload/merchandise/pdc/960/064/4693390119809064960/0/1837432-2.jpg" >
+                                <img src="http://a.vpimg2.com/upload/merchandise/pdc/960/064/4693390119809064960/0/1837432-2.jpg" alt="..." class="thumbnail">
+                            </a>
+                            <a href="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" >
+                                <img src="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" alt="..." class="thumbnail">
+                            </a>
+                            <a href="http://img0.imgtn.bdimg.com/it/u=2326269606,736244760&fm=21&gp=0.jpg" >
+                                <img src="http://img0.imgtn.bdimg.com/it/u=2326269606,736244760&fm=21&gp=0.jpg" alt="..." class="thumbnail">
+                            </a>
+                            <a href="http://a.vpimg2.com/upload/merchandise/pdc/960/064/4693390119809064960/0/1837432-4.jpg" >
+                                <img src="http://a.vpimg2.com/upload/merchandise/pdc/960/064/4693390119809064960/0/1837432-4.jpg" alt="..." class="thumbnail">
+                            </a>
+                            <a href="http://a.vpimg2.com/upload/merchandise/pdc/917/581/3898504770396581917/3/LCCSP01WOP004U1-16.jpg" >
+                                <img src="http://a.vpimg2.com/upload/merchandise/pdc/917/581/3898504770396581917/3/LCCSP01WOP004U1-16.jpg" alt="..." class="thumbnail">
+                            </a>
+                            <a href="http://img0.imgtn.bdimg.com/it/u=2326269606,736244760&fm=21&gp=0.jpg" >
+                                <img src="http://img0.imgtn.bdimg.com/it/u=2326269606,736244760&fm=21&gp=0.jpg" alt="..." class="thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="backward "><span class="glyphicon glyphicon-menu-right"></span></div>
+                </td>
+            </tr>
+        </table>
+     </div>
+    <div class="col-md-5 product-desc">
+         <div class="brand"><span class="en">Saint Laurent/</span><span class="ch">伊夫圣罗兰</span></div>
+
+
+
+
+        <div class="panel panel-default ">
+            <div class="panel-heading">
+                <h3 class="panel-title">Brand</h3>
+            </div>
+            <div class="panel-body">
+                <div class="detail">
+                    <div class="designer">Brand</div>
+                    <div class="title">Delmont 修身西装外套</div>
+                    <div class="resource">来源：Moda Operandi</div>
+                    <div class="desc"><span class="gender">女士</span><span class="size">尺寸 US6</span><span class="color">颜色 黑</span></div>
+                    <div class="price">999 <del>1999</del></div>
+                    <div class="owner">所有者：Alickchen</div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col-md-5"></div>
-
-
 </div>
 
 
@@ -81,13 +113,40 @@
 <script>
      $(function () {
 
-         var  $imgshow= $('.img-show img');
+         var  $imgshow = $('.img-show img');
+         var  $forward = $('.operation .forward');
+         var  $backward = $('.operation .backward');
+         var  $wrap = $('.operation .imglink .wrap');
+         var  $link = $('.operation .imglink .wrap a');
+
+
          $('.operation a').click(function (e) {
              e.preventDefault();
              var href = $(this).attr('href');
-             $imgshow.attr('src',href)
-         })
+             $imgshow.attr('src',href);
+             $link.removeClass('active');
+             $(this).addClass('active');
+         });
 
+
+         $forward.click(function () {
+             var width=$link.outerWidth();
+             var num=Math.ceil( parseInt( $wrap.css('left'))/width);
+             if(num<0){
+                 var left = width*(num+1);
+                 $wrap.css('left',left)
+             }
+         });
+
+         $backward.click(function () {
+             var width=$link.outerWidth();
+             var num=Math.ceil( parseInt( $wrap.css('left'))/width);
+
+             if(num+$link.length>2){
+                 var left = width*(num-1);
+                 $wrap.css('left',left);
+             }
+         })
 
 
      })
