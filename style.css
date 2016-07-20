@@ -172,6 +172,7 @@ body {
   color: #666;
   font-size: 16px;
   font-weight: bold;
+  background-color: #fff;
 }
 .product-detail .product-desc .desc-box .price {
   line-height: 35px;
@@ -193,4 +194,21 @@ body {
   font-size: 16px;
   color: #333;
   line-height: 35px;
+}
+.product-detail .product-desc .desc-box .detail {
+  color: #999;
+  line-height: 25px;
+  background-color: #fff;
+  padding: 15px;
+}
+.product-detail .product-desc .desc-box .detail span {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #666;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+.product-detail .product-desc .desc-box .contact {
+  margin-top: 20px;
 }
