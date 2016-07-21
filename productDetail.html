@@ -208,20 +208,27 @@
          var  $wrap = $('.operation .imglink .wrap');
          var  $link = $('.operation .imglink .wrap a');
 
-         $imgshow.elevateZoom({ //动画
-             easing: true,//是否开启动画效果
-             scrollZoom : true,
-             zoomWindowWidth: 400,
-             zoomWindowHeight: 400,
-             responsive:true,
-             cursor: "crosshair",
-         });
+
+         if( $(window).width()>768) {
+             $imgshow.elevateZoom({
+                 easing: true,
+                 scrollZoom : true,
+                 zoomWindowWidth: 400,
+                 zoomWindowHeight: 400,
+                 responsive:true,
+                 cursor: "crosshair",
+             });
+         };
+
          $('.operation a').click(function (e) {
              e.preventDefault();
              var href = $(this).attr('href');
              $imgshow.attr('src',href);
-             var ez =   $imgshow.data('elevateZoom');
-             ez.swaptheimage(href, href);
+            //判断是否开启放大镜
+             if($imgshow.data('elevateZoom')){
+                 var ez =   $imgshow.data('elevateZoom');
+                 ez.swaptheimage(href, href);
+             }
              $link.removeClass('active');
              $(this).addClass('active');
          });
