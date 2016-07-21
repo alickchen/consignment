@@ -43,6 +43,7 @@ body {
   display: inline-block;
   padding: 0 8px;
   margin-right: 5px;
+  margin-top: 5px;
   white-space: nowrap;
   border: 1px solid #E5E5E5;
   color: #666;
@@ -192,7 +193,7 @@ body {
 }
 .product-detail .product-desc .desc-box .owner {
   font-size: 16px;
-  color: #333;
+  color: #666;
   line-height: 35px;
 }
 .product-detail .product-desc .desc-box .detail {
@@ -223,4 +224,72 @@ body {
 }
 .product-detail .others hr {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .item {
+    padding: 5px;
+  }
+  .product-detail .product-img table .img-show td {
+    height: 400px;
+  }
+  .product-detail .product-desc {
+    height: 400px;
+  }
+  .product-detail .product-desc .desc-box .brand {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .product-detail .product-desc .desc-box .title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .product-detail .product-desc .desc-box .resource,
+  .product-detail .product-desc .desc-box .reslink {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .product-detail .product-desc .desc-box .desc {
+    margin: 3px auto 5px;
+  }
+  .product-detail .product-desc .desc-box .desc span {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+  .product-detail .product-desc .desc-box .price {
+    line-height: 30px;
+  }
+  .product-detail .product-desc .desc-box .price .newprice {
+    font-size: 18px;
+  }
+  .product-detail .product-desc .desc-box .price .newprice span {
+    font-size: 23px;
+  }
+  .product-detail .product-desc .desc-box .price .oldprice {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .product-detail .product-desc .desc-box .owner {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .product-detail .product-desc .desc-box .detail {
+    padding: 10px;
+  }
+  .product-detail .product-desc .desc-box .detail span {
+    font-size: 18px;
+  }
+  .product-detail .product-desc .desc-box .contact {
+    margin-top: 10px;
+  }
+  .product-detail .others h3 {
+    text-align: center;
+    background-color: #FAFAFA ;
+    color: #666;
+    width: 150px;
+    position: relative;
+    top: 35px;
+  }
+  .product-detail .others hr {
+    margin-bottom: 30px;
+  }
 }

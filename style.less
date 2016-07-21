@@ -14,7 +14,6 @@ body {
 //}
 
 .item {
-
   padding: 10px;
   .box{
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -46,6 +45,7 @@ body {
           display: inline-block;
           padding: 0 8px;
           margin-right: 5px;
+          margin-top: 5px;
           white-space: nowrap;
           border: 1px solid #E5E5E5;
           color: #666;
@@ -64,7 +64,6 @@ body {
   }
 }
 .product-detail {
-
   .product-img{
     table {
      width: 100%;
@@ -138,8 +137,6 @@ body {
       }
     }
   }
-
-
   .product-desc {
     height: 600px;
     display: table;
@@ -204,7 +201,7 @@ body {
       }
       .owner {
         font-size: 16px;
-        color: #333;
+        color: #666;
         line-height: 35px;
       }
       .detail {
@@ -228,7 +225,7 @@ body {
 
     }
   }
-.others {
+  .others {
   h3 {
     text-align: center;
     background-color: #FAFAFA ;
@@ -242,6 +239,85 @@ body {
   }
 
 }
+}
+@media screen and (max-width: 768px){
+  .item {
+    padding: 5px;
+  }
+  .product-detail {
+    .product-img{
+      table {
+        .img-show {
+          td{
+            height: 400px;
+          }
+        }
+      }
+    }
+    .product-desc {
+      height: 400px;
+      .desc-box{
+        .brand {
+          font-size: 20px;
+          line-height: 35px;
+        }
+        .title {
+          font-size: 16px;
+          line-height: 25px;
+        }
+        .resource,.reslink {
+          font-size: 14px;
+          line-height: 25px;
+        }
+        .desc {
+          margin: 3px auto 5px;
+          span {
+            padding: 0 8px;
+            font-size: 14px;
+          }
+        }
+        .price {
+          line-height: 30px;
+          .newprice {
+            font-size: 18px;
+            span{
+              font-size: 23px;
+            }
+          }
+          .oldprice {
+            margin-left: 20px;
+            font-size: 14px;
+          }
+        }
+        .owner {
+          font-size: 15px;
+          line-height: 30px;
+        }
+        .detail {
+          span{
+            font-size: 18px;
+          }
+          padding: 10px;
+        }
+        .contact {
+          margin-top: 10px;
+        }
 
+      }
+    }
+    .others {
+      h3 {
+        text-align: center;
+        background-color: #FAFAFA ;
+        color: #666;
+        width: 150px;
+        position: relative;
+        top: 35px;
+      }
+      hr {
+        margin-bottom: 30px;
+      }
 
+    }
+  }
 }
