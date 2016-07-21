@@ -43,7 +43,7 @@
 </nav>
 <div  class="container" >
     <div id="masonry">
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/cache/url/cd/cdef8578edf71cd32fb43ae3fca593ea/ori.jpg" >
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fecx.images-amazon.com%2Fimages%2FI%2F51HE%252BwaC2cL.jpg&width=625&height=750&is_fill=1&is_trim=1" >
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://www.rotita.com/images/201605/goods_img/145325_P_1463369740926.jpg" >
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fs7d4.scene7.com%2Fis%2Fimage%2FBrooksBrothers%2FMG01946_LIGHT-BLUE%3F%24bbenlarged%24&width=625&height=750&is_fill=1&is_trim=1" >
@@ -103,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/img.php?fs_id=5738b2379ebca926235879af&fs_name=order_comment" >
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fimages.asos-media.com%2Finv%2Fmedia%2F7%2F4%2F7%2F9%2F6619747%2Fcoral%2Fimage1xxl.jpg&width=625&height=750&is_fill=1&is_trim=1" >
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/img.php?url=http%3A%2F%2Fimage.s5a.com%2Fis%2Fimage%2Fsaks%2F0400090888706%3Fwid%3D750%26hei%3D1000&width=625&height=750&is_fill=1&is_trim=1" >
@@ -148,7 +148,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/cache/url/cd/cdef8578edf71cd32fb43ae3fca593ea/ori.jpg" >
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-item item col-md-3">
+        <div class="grid-item item col-md-3 col-sm-4 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="http://image.xiyanghui.com/cache/url/cd/cdef8578edf71cd32fb43ae3fca593ea/ori.jpg" >
@@ -194,23 +194,23 @@
                 gutter: gutter,
                 isAnimated: true
             });
-            centerFunc = function() {
-                $top0 = $objbox.children("[style*='top: 0']");
-                $objbox.css("left", ($objbox.width() - ($top0.width() * $top0.length + gutter * ($top0.length - 1))) / 2).parent().css("overflow", "hidden");
-            };
-            centerFunc();
+//            centerFunc = function() {
+//                $top0 = $objbox.children("[style*='top: 0']");
+//                $objbox.css("left", ($objbox.width() - ($top0.width() * $top0.length + gutter * ($top0.length - 1))) / 2).parent().css("overflow", "hidden");
+//            };
+//            centerFunc();
         });
-        var tur = true;
-        $(window).resize(function() {
-            if (tur) {
-                setTimeout(function() {
-                            tur = true;
-                            centerFunc();
-                        },
-                        1000);
-                tur = false;
-            }
-        });
+//        var tur = true;
+//        $(window).resize(function() {
+//            if (tur) {
+//                setTimeout(function() {
+//                            tur = true;
+//                            centerFunc();
+//                        },
+//                        1000);
+//                tur = false;
+//            }
+//        });
     });
 
 
