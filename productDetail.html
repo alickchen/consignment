@@ -12,6 +12,7 @@
     <script src="jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery.elevateZoom-3.0.8.min.js"></script>
 
 </head>
 <body>
@@ -45,8 +46,8 @@
         <div class="col-sm-7 product-img">
             <table>
                 <tr class="img-show">
-                    <td>
-                        <img src="http://img1.mydrivers.com/img/20121009/621aeecd83eb43d5b738dff93b4a0002.jpg" alt="..." class="thumbnail img-responsive center-block">
+                    <td >
+                        <img src="http://img1.mydrivers.com/img/20121009/621aeecd83eb43d5b738dff93b4a0002.jpg" alt="..." data-zoom-image="http://img1.mydrivers.com/img/20121009/621aeecd83eb43d5b738dff93b4a0002.jpg" class="img-responsive center-block">
                     </td>
                 </tr>
                 <tr>
@@ -121,8 +122,7 @@
                     <div class="owner">所有者：Alickchen</div>
                 </div>
             </div>
-        </div>
-        <div class="item col-sm-3 col-xs-6">
+        </div><div class="item col-sm-3 col-xs-6">
             <div class="box">
                 <div class="image">
                     <img src="https://img.alicdn.com/bao/uploaded/i3/TB1uXHvKVXXXXbhXXXX7n6sFpXX_728x728.jpg" >
@@ -208,10 +208,20 @@
          var  $wrap = $('.operation .imglink .wrap');
          var  $link = $('.operation .imglink .wrap a');
 
+         $imgshow.elevateZoom({ //动画
+             easing: true,//是否开启动画效果
+             scrollZoom : true,
+             zoomWindowWidth: 400,
+             zoomWindowHeight: 400,
+             responsive:true,
+             cursor: "crosshair",
+         });
          $('.operation a').click(function (e) {
              e.preventDefault();
              var href = $(this).attr('href');
              $imgshow.attr('src',href);
+             var ez =   $imgshow.data('elevateZoom');
+             ez.swaptheimage(href, href);
              $link.removeClass('active');
              $(this).addClass('active');
          });
