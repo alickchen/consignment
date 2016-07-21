@@ -5,41 +5,41 @@
 body {
   background: #FAFAFA;
 }
-.grid-item {
+.item {
   padding: 10px;
 }
-.grid-item .box {
+.item .box {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   background: #FFF;
 }
-.grid-item .box .image {
+.item .box .image {
   width: 100%;
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
-.grid-item .box .image img {
+.item .box .image img {
   max-width: 100%;
   display: inline-block;
 }
-.grid-item .box .detail {
+.item .box .detail {
   padding: 10px;
   color: #333;
   line-height: 1.75em;
 }
-.grid-item .box .detail .designer {
+.item .box .detail .designer {
   font-size: 16px;
   font-weight: bold;
 }
-.grid-item .box .detail .title,
-.grid-item .box .detail .resource,
-.grid-item .box .detail .owner {
+.item .box .detail .title,
+.item .box .detail .resource,
+.item .box .detail .owner {
   font-size: 12px;
   color: #999;
 }
-.grid-item .box .detail .desc {
+.item .box .detail .desc {
   margin: 5px auto 8px;
 }
-.grid-item .box .detail .desc span {
+.item .box .detail .desc span {
   display: inline-block;
   padding: 0 8px;
   margin-right: 5px;
@@ -48,10 +48,10 @@ body {
   color: #666;
   font-size: 12px;
 }
-.grid-item .box .detail .price {
+.item .box .detail .price {
   font-size: 18px;
 }
-.grid-item .box .detail .price del {
+.item .box .detail .price del {
   margin-left: 10px;
   font-size: 14px;
   color: #AAA;
@@ -212,4 +212,15 @@ body {
 }
 .product-detail .product-desc .desc-box .contact {
   margin-top: 20px;
+}
+.product-detail .others h3 {
+  text-align: center;
+  background-color: #FAFAFA ;
+  color: #666;
+  width: 150px;
+  position: relative;
+  top: 35px;
+}
+.product-detail .others hr {
+  margin-bottom: 30px;
 }
