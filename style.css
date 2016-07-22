@@ -11,6 +11,9 @@ body {
 .item {
   padding: 10px;
 }
+.item a {
+  text-decoration: none;
+}
 .item .box {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   background: #FFF;
@@ -60,35 +63,35 @@ body {
   font-size: 14px;
   color: #AAA;
 }
-.product-detail .product-img table {
+.modal-dialog .product-detail .product-img table {
   width: 100%;
 }
-.product-detail .product-img table .img-show td {
+.modal-dialog .product-detail .product-img table .img-show td {
   height: 620px;
   padding-bottom: 20px;
   text-align: center;
   vertical-align: middle;
 }
-.product-detail .product-img table .img-show td img {
+.modal-dialog .product-detail .product-img table .img-show td img {
   display: inline-block;
   max-width: 100%;
   max-height: 100%;
 }
-.product-detail .product-img table .img-show td .thumbnail {
+.modal-dialog .product-detail .product-img table .img-show td .thumbnail {
   margin-bottom: 0;
 }
-.product-detail .product-img .operation {
+.modal-dialog .product-detail .product-img .operation {
   margin: 20px 0 100px;
   width: 100%;
   position: relative;
 }
-.product-detail .product-img .operation .imglink {
+.modal-dialog .product-detail .product-img .operation .imglink {
   position: relative;
   height: 130px;
   margin: 0 30px;
   overflow: hidden;
 }
-.product-detail .product-img .operation .imglink .wrap {
+.modal-dialog .product-detail .product-img .operation .imglink .wrap {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,22 +100,22 @@ body {
   -webkit-transition: all 0.5s;
   /* Safari 和 Chrome */
 }
-.product-detail .product-img .operation .imglink .wrap a {
+.modal-dialog .product-detail .product-img .operation .imglink .wrap a {
   display: inline-block;
   width: 100px;
   height: 130px;
   margin-left: -3.5px;
   padding-left: 5px;
 }
-.product-detail .product-img .operation .imglink .wrap a.active img {
+.modal-dialog .product-detail .product-img .operation .imglink .wrap a.active img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.product-detail .product-img .operation .imglink .wrap a img {
+.modal-dialog .product-detail .product-img .operation .imglink .wrap a img {
   width: 100%;
   margin-bottom: 0;
 }
-.product-detail .product-img .operation .forward,
-.product-detail .product-img .operation .backward {
+.modal-dialog .product-detail .product-img .operation .forward,
+.modal-dialog .product-detail .product-img .operation .backward {
   width: 30px;
   height: 110px;
   position: absolute;
@@ -123,51 +126,51 @@ body {
   color: #aaa;
   cursor: pointer;
 }
-.product-detail .product-img .operation .forward {
+.modal-dialog .product-detail .product-img .operation .forward {
   left: 0;
 }
-.product-detail .product-img .operation .backward {
+.modal-dialog .product-detail .product-img .operation .backward {
   right: 0;
 }
-.product-detail .product-desc {
+.modal-dialog .product-detail .product-desc {
   height: 600px;
   display: table;
 }
-.product-detail .product-desc .desc-box {
+.modal-dialog .product-detail .product-desc .desc-box {
   display: table-cell;
   vertical-align: middle;
 }
-.product-detail .product-desc .desc-box .brand {
+.modal-dialog .product-detail .product-desc .desc-box .brand {
   font-size: 25px;
   font-weight: bold;
   line-height: 40px;
 }
-.product-detail .product-desc .desc-box .brand .en {
+.modal-dialog .product-detail .product-desc .desc-box .brand .en {
   font-style: italic;
 }
-.product-detail .product-desc .desc-box .brand .ch {
+.modal-dialog .product-detail .product-desc .desc-box .brand .ch {
   margin-left: 5px;
   color: #666;
 }
-.product-detail .product-desc .desc-box .title {
+.modal-dialog .product-detail .product-desc .desc-box .title {
   font-size: 18px;
   color: #666;
   line-height: 30px;
 }
-.product-detail .product-desc .desc-box .resource,
-.product-detail .product-desc .desc-box .reslink {
+.modal-dialog .product-detail .product-desc .desc-box .resource,
+.modal-dialog .product-detail .product-desc .desc-box .reslink {
   font-size: 16px;
   color: #666;
   line-height: 25px;
 }
-.product-detail .product-desc .desc-box .resource a,
-.product-detail .product-desc .desc-box .reslink a {
+.modal-dialog .product-detail .product-desc .desc-box .resource a,
+.modal-dialog .product-detail .product-desc .desc-box .reslink a {
   font-style: italic;
 }
-.product-detail .product-desc .desc-box .desc {
+.modal-dialog .product-detail .product-desc .desc-box .desc {
   margin: 5px auto 8px;
 }
-.product-detail .product-desc .desc-box .desc span {
+.modal-dialog .product-detail .product-desc .desc-box .desc span {
   display: inline-block;
   padding: 0 12px;
   margin-right: 5px;
@@ -178,35 +181,35 @@ body {
   font-weight: bold;
   background-color: #fff;
 }
-.product-detail .product-desc .desc-box .price {
+.modal-dialog .product-detail .product-desc .desc-box .price {
   line-height: 35px;
 }
-.product-detail .product-desc .desc-box .price .newprice {
+.modal-dialog .product-detail .product-desc .desc-box .price .newprice {
   font-size: 20px;
   color: #666;
 }
-.product-detail .product-desc .desc-box .price .newprice span {
+.modal-dialog .product-detail .product-desc .desc-box .price .newprice span {
   color: #000;
   font-size: 25px;
 }
-.product-detail .product-desc .desc-box .price .oldprice {
+.modal-dialog .product-detail .product-desc .desc-box .price .oldprice {
   margin-left: 20px;
   font-size: 16px;
   color: #AAA;
 }
-.product-detail .product-desc .desc-box .owner {
+.modal-dialog .product-detail .product-desc .desc-box .owner {
   font-size: 16px;
   color: #666;
   line-height: 35px;
 }
-.product-detail .product-desc .desc-box .detail {
+.modal-dialog .product-detail .product-desc .desc-box .detail {
   color: #999;
   line-height: 25px;
   background-color: #fff;
   padding: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-.product-detail .product-desc .desc-box .detail span {
+.modal-dialog .product-detail .product-desc .desc-box .detail span {
   display: block;
   width: 100%;
   font-size: 18px;
@@ -214,85 +217,69 @@ body {
   border-bottom: 1px solid #aaa;
   margin-bottom: 10px;
 }
-.product-detail .product-desc .desc-box .contact {
+.modal-dialog .product-detail .product-desc .desc-box .contact {
   margin-top: 20px;
 }
-.product-detail .others h3 {
-  text-align: center;
-  background-color: #FAFAFA ;
-  color: #666;
-  width: 150px;
-  position: relative;
-  top: 35px;
-}
-.product-detail .others hr {
-  margin-bottom: 30px;
-}
 @media screen and (max-width: 768px) {
+  .list-page.container {
+    padding: 0;
+  }
   .item {
     padding: 5px;
   }
-  .product-detail .product-img table .img-show td {
+  .modal-dialog {
+    margin: 5px;
+  }
+  .modal-dialog .product-detail .product-img table .img-show td {
     height: 400px;
   }
-  .product-detail .product-desc {
+  .modal-dialog .product-detail .product-desc {
     height: 400px;
   }
-  .product-detail .product-desc .desc-box .brand {
+  .modal-dialog .product-detail .product-desc .desc-box .brand {
     font-size: 20px;
     line-height: 35px;
   }
-  .product-detail .product-desc .desc-box .title {
+  .modal-dialog .product-detail .product-desc .desc-box .title {
     font-size: 16px;
     line-height: 25px;
   }
-  .product-detail .product-desc .desc-box .resource,
-  .product-detail .product-desc .desc-box .reslink {
+  .modal-dialog .product-detail .product-desc .desc-box .resource,
+  .modal-dialog .product-detail .product-desc .desc-box .reslink {
     font-size: 14px;
     line-height: 25px;
   }
-  .product-detail .product-desc .desc-box .desc {
+  .modal-dialog .product-detail .product-desc .desc-box .desc {
     margin: 3px auto 5px;
   }
-  .product-detail .product-desc .desc-box .desc span {
+  .modal-dialog .product-detail .product-desc .desc-box .desc span {
     padding: 0 8px;
     font-size: 14px;
   }
-  .product-detail .product-desc .desc-box .price {
+  .modal-dialog .product-detail .product-desc .desc-box .price {
     line-height: 30px;
   }
-  .product-detail .product-desc .desc-box .price .newprice {
+  .modal-dialog .product-detail .product-desc .desc-box .price .newprice {
     font-size: 18px;
   }
-  .product-detail .product-desc .desc-box .price .newprice span {
+  .modal-dialog .product-detail .product-desc .desc-box .price .newprice span {
     font-size: 23px;
   }
-  .product-detail .product-desc .desc-box .price .oldprice {
+  .modal-dialog .product-detail .product-desc .desc-box .price .oldprice {
     margin-left: 20px;
     font-size: 14px;
   }
-  .product-detail .product-desc .desc-box .owner {
+  .modal-dialog .product-detail .product-desc .desc-box .owner {
     font-size: 15px;
     line-height: 30px;
   }
-  .product-detail .product-desc .desc-box .detail {
+  .modal-dialog .product-detail .product-desc .desc-box .detail {
     padding: 10px;
   }
-  .product-detail .product-desc .desc-box .detail span {
+  .modal-dialog .product-detail .product-desc .desc-box .detail span {
     font-size: 18px;
   }
-  .product-detail .product-desc .desc-box .contact {
+  .modal-dialog .product-detail .product-desc .desc-box .contact {
     margin-top: 10px;
-  }
-  .product-detail .others h3 {
-    text-align: center;
-    background-color: #FAFAFA ;
-    color: #666;
-    width: 150px;
-    position: relative;
-    top: 35px;
-  }
-  .product-detail .others hr {
-    margin-bottom: 30px;
   }
 }
